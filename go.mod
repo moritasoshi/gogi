@@ -1,4 +1,4 @@
-module github.com/cuonglm/gogi
+module github.com/moritasoshi/gogi
 
 go 1.13
 

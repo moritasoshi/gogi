@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cuonglm/gogi"
+	"github.com/moritasoshi/gogi"
 )
 
 var (
@@ -76,7 +76,7 @@ func list() {
 		log.Fatal(err)
 	}
 
-	_, _ = fmt.Fprintln(os.Stderr, data)
+	_, _ = fmt.Fprintln(os.Stdout, data)
 }
 
 func listJson() {
@@ -97,7 +97,7 @@ func create(s string) {
 		log.Fatal(err)
 	}
 
-	_, _ = fmt.Fprintln(os.Stderr, data)
+	_, _ = fmt.Fprintln(os.Stdout, data)
 }
 
 func search(s string) {
@@ -116,5 +116,5 @@ func search(s string) {
 }
 
 func printError(msg string) {
-	_, _ = fmt.Fprintln(os.Stderr, msg)
+	_, _ = fmt.Fprintln(os.Stdout, msg)
 }
